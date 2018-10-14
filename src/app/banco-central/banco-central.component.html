@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-header">
+    Cotação do Dia
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 w-100 bd-highlight">Dolar</div>
+        <div class="p-2 flex-shrink-1 bd-highlight">{{ (Dolar | async)?.cotacaoCompra }}</div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 w-100 bd-highlight">Euro</div>
+        <div class="p-2 flex-shrink-1 bd-highlight">{{ (Euro | async)?.cotacaoCompra }}</div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 w-100 bd-highlight">Libra</div>
+        <div class="p-2 flex-shrink-1 bd-highlight">{{ (Libra | async)?.cotacaoCompra }}</div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 w-100 bd-highlight">Iene</div>
+        <div class="p-2 flex-shrink-1 bd-highlight">{{ (Iene | async)?.cotacaoCompra }}</div>
+      </div>
+    </li>
+  </ul>
+</div>
